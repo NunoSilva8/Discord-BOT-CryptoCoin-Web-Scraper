@@ -381,5 +381,8 @@ async def on_message(msg):
 
     if (msg.content == '!toribio'):
         await msg.channel.send('NI||NJ||A')
+        
+    if (msg.content == '!admin'):
+        await msg.channel.send('ADIMINISTROO')
 
 client.run(TOKEN)
