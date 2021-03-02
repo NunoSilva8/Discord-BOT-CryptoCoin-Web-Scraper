@@ -2,7 +2,7 @@ import discord
 import requests
 from bs4 import BeautifulSoup
 
-TOKEN = 'ODE1OTUwMTc1OTg2MTIyNzgy.YDz20Q.JD0MoNq_umsww4waY2NcbhgAKfo'
+TOKEN = input('TOKEN=')
 client = discord.Client()
 
 
