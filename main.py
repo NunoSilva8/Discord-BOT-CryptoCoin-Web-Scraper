@@ -30,7 +30,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[BITCOIN]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text(), all_results_values[12].get_text()))
@@ -48,7 +49,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[ETHEREUM]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -67,7 +69,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[BINANCE COIN]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text(), all_results_values[12].get_text()))
@@ -85,7 +88,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[LITECOIN]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -104,7 +108,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[BITCOIN CASH]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -122,7 +127,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[MONERO]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -140,7 +146,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[BITCOIN SV]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -158,7 +165,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[MAKER]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text(), all_results_values[12].get_text(), all_results_values[13].get_text()))
@@ -176,7 +184,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[DASH]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[8].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text()))
@@ -194,7 +203,8 @@ async def on_message(msg):
             'div', class_='priceValue___11gHJ')
 
         all_results_values = soup2.find_all('span', class_='no-wrap')
-        all_results_percentage = soup2.find_all('span', class_='text-green')
+        all_results_percentage = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         await msg.channel.send('```[ZCASH]\nValor atual: {} -> {}\nBaixo de 24h: {}\nAlto de 24h: {}\nBaixo de 7 dias: {}\nAlto de 7 dias: {}```'.format(
             current_result_value[0].get_text(), all_results_percentage[0].get_text(), all_results_values[9].get_text(), all_results_values[10].get_text(), all_results_values[11].get_text(), all_results_values[12].get_text()))
@@ -213,7 +223,8 @@ async def on_message(msg):
         current_result_value1 = soup1.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage2 = soup2.find_all('span', class_='text-green')
+        all_results_percentage2 = soup2.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[BITCOIN]\nValor atual: {} -> {}\n\n'.format(
             current_result_value1[0].get_text(), all_results_percentage2[0].get_text())
@@ -229,7 +240,8 @@ async def on_message(msg):
         current_result_value3 = soup3.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage4 = soup4.find_all('span', class_='text-green')
+        all_results_percentage4 = soup4.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[ETHEREUM]\nValor atual: {} -> {}\n\n'.format(
             current_result_value3[0].get_text(), all_results_percentage4[0].get_text())
@@ -246,7 +258,8 @@ async def on_message(msg):
         current_result_value5 = soup5.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage6 = soup6.find_all('span', class_='text-green')
+        all_results_percentage6 = soup6.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[BINANCE COIN]\nValor atual: {} -> {}\n\n'.format(
             current_result_value5[0].get_text(), all_results_percentage6[0].get_text())
@@ -262,7 +275,8 @@ async def on_message(msg):
         current_result_value7 = soup7.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage8 = soup8.find_all('span', class_='text-green')
+        all_results_percentage8 = soup8.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[LITECOIN]\nValor atual: {} -> {}\n\n'.format(
             current_result_value7[0].get_text(), all_results_percentage8[0].get_text())
@@ -279,7 +293,8 @@ async def on_message(msg):
         current_result_value9 = soup9.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage10 = soup10.find_all('span', class_='text-green')
+        all_results_percentage10 = soup10.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[BITCOIN CASH]\nValor atual: {} -> {}\n\n'.format(
             current_result_value9[0].get_text(), all_results_percentage10[0].get_text())
@@ -295,7 +310,8 @@ async def on_message(msg):
         current_result_value11 = soup11.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage12 = soup12.find_all('span', class_='text-green')
+        all_results_percentage12 = soup12.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[MONERO]\nValor atual: {} -> {}\n\n'.format(
             current_result_value11[0].get_text(), all_results_percentage12[0].get_text())
@@ -311,7 +327,8 @@ async def on_message(msg):
         current_result_value13 = soup13.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage14 = soup14.find_all('span', class_='text-green')
+        all_results_percentage14 = soup14.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[BITCOIN SV]\nValor atual: {} -> {}\n\n'.format(
             current_result_value13[0].get_text(), all_results_percentage14[0].get_text())
@@ -327,7 +344,8 @@ async def on_message(msg):
         current_result_value15 = soup15.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage16 = soup16.find_all('span', class_='text-green')
+        all_results_percentage16 = soup16.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[MAKER]\nValor atual: {} -> {}\n\n'.format(
             current_result_value15[0].get_text(), all_results_percentage16[0].get_text())
@@ -343,7 +361,8 @@ async def on_message(msg):
         current_result_value17 = soup17.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage18 = soup18.find_all('span', class_='text-green')
+        all_results_percentage18 = soup18.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[DASH]\nValor atual: {} -> {}\n\n'.format(
             current_result_value17[0].get_text(), all_results_percentage18[0].get_text())
@@ -359,7 +378,8 @@ async def on_message(msg):
         current_result_value19 = soup19.find_all(
             'div', class_='priceValue___11gHJ')
 
-        all_results_percentage20 = soup20.find_all('span', class_='text-green')
+        all_results_percentage20 = soup20.find_all(
+            'span', attrs={'data-target': 'percent-change.percent'})
 
         mensagem_final = mensagem_final + '[ZCASH]\nValor atual: {} -> {}\n\n'.format(
             current_result_value19[0].get_text(), all_results_percentage20[0].get_text())
@@ -381,7 +401,7 @@ async def on_message(msg):
 
     if (msg.content == '!toribio'):
         await msg.channel.send('NI||NJ||A')
-        
+
     if (msg.content == '!admin'):
         await msg.channel.send('ADIMINISTROO')
 
