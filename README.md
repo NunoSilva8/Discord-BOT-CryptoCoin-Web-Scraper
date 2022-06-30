@@ -1,1 +1,4 @@
-# bot-cagador-de-moedas-virtuais
+# Discord-BOT-CryptoCoin-Web-Scraper
+
+Outdated.\
+Probably doesn't work.
